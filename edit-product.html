@@ -219,7 +219,7 @@
               <div class="card-body">
                 <!-- Edit Product Form -->
                 <!-- Custom Styled Validation -->
-                <form class="g-3 needs-validation" novalidate>
+                <form class="g-3 needs-validation" novalidate method="post">
                   <div class="row mb-3">
                     <label for="barcode" class="col-form-label col-sm-3"
                       >Barcode</label
@@ -258,12 +258,7 @@
                       >Product Description</label
                     >
                     <div class="col-sm-9">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="productDescription"
-                        required
-                      />
+                      <textarea id="productDescription" class="form-control" style="height: 100px" required></textarea>
                       <div class="invalid-feedback">
                         Please enter product description.
                       </div>
